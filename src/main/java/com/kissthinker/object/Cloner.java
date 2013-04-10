@@ -9,9 +9,18 @@ import com.kissthinker.io.ByteOutputStream;
 /**
  * Object cloning utility.
  * <br/>
+ * Instead use "cloning" library:
+ *  <pre>
+ *  <dependency>
+ *      <groupId>uk.com.robust-it</groupId>
+ *      <artifactId>cloning</artifactId>
+ *      <version>${cloning.version}</version>
+ *  </dependency>
+ *  </pre>
  * @author David Ainslie
  *
  */
+@Deprecated
 public final class Cloner
 {
     /**
