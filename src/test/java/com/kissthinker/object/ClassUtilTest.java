@@ -37,7 +37,16 @@ public class ClassUtilTest
      *
      */
     @Test
-    public void path()
+    public void pathAndClassNameWithPrefix()
+    {
+        assertEquals("_root_/com/kissthinker/object/ClassUtil", pathAndClassName("_root_/", ClassUtil.class));
+    }
+   
+    /**
+     *
+     */
+    @Test
+    public void pathAndClassNameWithSuffix()
     {
         assertEquals("com/kissthinker/object/ClassUtil.properties", pathAndClassName(ClassUtil.class, ".properties"));
     }
