@@ -196,7 +196,6 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-                    <complianceLevel>${java.version}</complianceLevel>
                     <showDeprecation>true</showDeprecation>
                     <showWarnings>true</showWarnings>
                     <!-- Recommended to use the following, but not everyone has the JAVA_HOME environment variable set -->
@@ -211,8 +210,6 @@
                 <version>2.9</version>
 
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
                     <!-- Required if (AspectJ) load time weaving is used instead of compile time weaving, and would also require an aop.xml -->
                     <!-- Note that there is an aop.xml within "core" project's "META-INF" that is name Xaop.xml so that it is ignored (if an agent is run). -->
                     <!-- argLine>-javaagent:${basedir}/target/dependency/aspectjweaver.jar</argLine -->
@@ -274,7 +271,6 @@
                     
                 <configuration>
                     <findbugsXmlOutput>true</findbugsXmlOutput>
-                    <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
                     <xmlOutput>true</xmlOutput>
                 </configuration>
             </plugin>                                   
